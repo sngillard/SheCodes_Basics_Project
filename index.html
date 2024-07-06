@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Free the Beach: MA</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(
+          180.5deg,
+          rgba(253, 120, 4, 0.13) 22.8%,
+          rgba(254, 200, 255, 0.238) 64.6%
+        );
+      }
+
+      .container {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .image {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+
+      h2,
+      h3,
+      h4 {
+        text-align: center;
+        font-family: courier;
+        font-weight: normal;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 2.5em;
+      }
+
+      h3,
+      h4 {
+        font-size: 2em;
+      }
+
+      .map .sign,
+      .nedcoll,
+      .petition,
+      .purchase {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .map {
+        display: block;
+        width: 350px;
+        height: 350px;
+        margin: auto;
+        border: 5px solid black;
+        border-radius: 5px;
+        cursor: zoom-in;
+        transition: width 0.5s, height 0.5s;
+      }
+
+      .map:hover {
+        width: 450px;
+        height: 450px;
+      }
+
+      .sign {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        opacity: 0.7;
+        max-width: 80%;
+      }
+
+      .nedcoll {
+        border: 2px solid black;
+        max-width: 70%;
+      }
+
+      p,
+      ul {
+        font-size: 18px;
+        font-family: helvetica;
+        text-align: justify;
+        margin: 10px 20px;
+      }
+
+      ul {
+        list-style: square;
+        line-height: 1.75em;
+      }
+
+      .petition,
+      .purchase {
+        display: block;
+        margin: auto;
+        background: black;
+        color: white;
+        font-size: 18px;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 3px 3px 6px #fbc6fbed;
+        font-family: monospace;
+        font-weight: 500;
+      }
+
+      .petition:hover,
+      .purchase:hover {
+        cursor: pointer;
+        transition: margin-right 1s 0.3s;
+        background-color: white;
+        color: black;
+        font-family: cursive;
+        font-size: 20px;
+      }
+
+      .hr-16 {
+        height: 10px;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='10'  viewBox='0 0 20 10' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-miterlimit='10'%3e%3cpath fill='none' d='M0 0h20v10H0z'/%3e%3cclipPath id='a'%3e%3cpath d='M0 0h20v10H0z'/%3e%3c/clipPath%3e%3cg clip-path='url(%23a)'%3e%3cpath d='M20 7.384c-4.999-.001-5-4.768-9.999-4.768C5 2.616 5 7.384 0 7.384' fill='none' stroke='%23000'/%3e%3c/g%3e%3c/svg%3e");
+        background-repeat: repeat-x;
+        background-position: center;
+        border: none;
+      }
+
+      .reddit {
+        display: block;
+        margin: auto;
+        width: 40px;
+        height: 40px;
+        padding-top: 50px;
+      }
+
+      .reddit:hover {
+        display: block;
+        margin: auto;
+        width: 60px;
+        height: 60px;
+        padding-top: 50px;
+      }
+
+      .news {
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.593);
+        font-family: monospace;
+        text-decoration: underline;
+      }
+
+      .new:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: purple;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 10px;
+        font-family: monospace;
+        color: rgb(127, 109, 109);
+        margin-bottom: 25px;
+      }
+
+      .sarah {
+        font-family: cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/642/original/beach.jpeg?1652922750"
+        alt="Massachusetts Beach"
+        class="image"
+      />
+      <div class="overlay">
+        <h1>Free Massachusetts' Beaches</h1>
+      </div>
+    </div>
+
+    <hr class="hr-16" />
+
+    <h2>Expanding access to our shoreline.</h2>
+
+    <p>
+      Did you know that Massachusetts has the most restrictive beach access in
+      the country? Private beaches are legal in the Bay State and
+      <strong> over 70% of the coastline is private. </strong>Due to a law from
+      the 1700s, coastal property owners in Massachusetts own the land down to
+      the low tide line, which limits public access to the ocean.
+    </p>
+
+    <p>
+      In Oregon, private beaches are illegal. In several states like Texas and
+      North Carolina, public access goes all the way up to the vegetation line.
+    </p>
+    <br />
+    <img
+      class="map"
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/641/original/shore_access_map.png?1652922566"
+    />
+    <br />
+
+    <p>
+      In Massachusetts, public access to the ocean on a private beach is only
+      allowed below the high water mark for “fishing, fowling, and navigation,”
+      but some state reps want to add the word “recreation” to that list.
+    </p>
+
+    <p>
+      As Representative Dylan Fernandes says,
+      <em
+        >“we need to democratize access to the ocean. No one should own the
+        ocean.” &ensp;</em
+      >
+    </p>
+
+    <p>
+      <a
+        class="news"
+        href="https://www.boston25news.com/news/state-lawmaker-files-bill-increase-beach-access-public/YF7IO2LN2FCVXOYEZWXWJ2UA54/"
+        target="_blank"
+        >Fox 25 News covers the bill here</a
+      >
+    </p>
+
+    <br />
+    <br />
+
+    <form>
+      <input
+        class="petition"
+        type="button"
+        onclick="location.href='https://www.gopetition.com/petitions/make-massachusetts-beaches-public.html';"
+        value="👉🏻 Sign the Petition ✍🏽"
+      />
+    </form>
+
+    <br />
+    <br />
+
+    <p class="private">
+      Although Massachusetts has several public beaches, access to many of them
+      is still intentionally limited today.&ensp;&ensp;
+      <br />
+      <br />
+      <img
+        class="sign"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/645/original/private_beach_sign.jpeg?1652923495"
+      />
+    </p>
+
+    <h3>Here are some ways access to public beaches is limited:</h3>
+
+    <ul>
+      <li>Requiring a resident sticker to access beach parking.</li>
+      <li>
+        Limiting the number of parking stickers sold to non-residents and
+        charging rates up to ten times as much for non-residents of the town.
+      </li>
+      <li>
+        Providing NO parking nearby, so that a public beach is essentially only
+        accessible to those fortunate enough to own oceanfront property or live
+        close by.
+      </li>
+      <li>
+        Charging higher rates for out-of-town MA residents and even higher fees
+        for those visiting from out of state.
+      </li>
+      <li>
+        Closing off parking spots to non-residents in favor of town residents
+        when the lot is getting full rather than offering parking on a
+        first-come, first-served basis.
+      </li>
+    </ul>
+
+    <h4>The Dark History of Limiting Shore Access</h4>
+
+    <p>
+      Activist Ned Coll fought to desegregate the beaches in nearby Connecticut
+      in 1975, but shore access is still limited in the Northeast today where
+      most coastal towns are mainly occupied by wealthy white inhabitants.
+      <br />
+      <br />
+      <img
+        class="nedcoll"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/643/original/ned_coll.png?1652922838"
+      /><br /><br />Andrew W. Kahrl wrote the book
+      <strong
+        >"Free the Beaches: The story of Ned Coll and the Battle for America's
+        Most Exclusive Shoreline"</strong
+      >
+      which aims to educate the public on the history of the fight to share the
+      shore.
+    </p>
+    <br />
+
+    <form>
+      <input
+        class="purchase"
+        type="button"
+        onclick="location.href='https://www.amazon.com/Free-Beaches-Americas-Exclusive-Shoreline/dp/0300215142';"
+        value="👉🏽 Purchase Book 📖"
+      />
+    </form>
+
+    <p>
+      <a
+        href="https://www.reddit.com/r/massachusetts/comments/uqz9a0/shouldnt_it_be_easier_more_affordable_to_access/"
+      >
+        <img
+          class="reddit"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/644/original/reddit.png?1652922909"
+          alt="Join the Discussion"
+        />
+      </a>
+    </p>
+
+    <footer>
+      This page was built by <span class="sarah">Sarah Gillard</span>
+    </footer>
+
+    <script>
+      let resident = prompt("Are you a Massachusetts resident?");
+      resident = resident.toLowerCase();
+      resident = resident.trim();
+
+      if (
+        resident === "yes" ||
+        resident === "yeah" ||
+        resident === "i am" ||
+        resident === "yep" ||
+        resident === "yup" ||
+        resident === "yea"
+      ) {
+        alert("Let's work together to expand access to our shoreline! 🌊");
+      } else {
+        alert(
+          "Please learn more about the beach access rights in Massachusetts!"
+        );
+      }
+    </script>
+  </body>
+</html>
